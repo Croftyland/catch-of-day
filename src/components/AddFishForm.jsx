@@ -18,14 +18,14 @@ class AddFishForm extends Component {
             desc: this.descRef.value.value,
             image: this.imageRef.value.value,
 
-        }
+        };
         console.log(this.nameRef.value.value);
         this.props.addFish(fish);
 
         //refresh form
         console.log(event.currentTarget);
         event.currentTarget.reset();
-    }
+    };
 
     render() {
         return (
